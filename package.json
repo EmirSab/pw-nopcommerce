@@ -1,0 +1,21 @@
+{
+  "name": "pw-nopcommerce",
+  "version": "1.0.0",
+  "description": "Automation testing of ecommerce page\r https://demo.nopcommerce.com/\r test",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmirSab/pw-nopcommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmirSab/pw-nopcommerce/issues"
+  },
+  "homepage": "https://github.com/EmirSab/pw-nopcommerce#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  }
+}
