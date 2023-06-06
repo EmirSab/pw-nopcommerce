@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "Automation testing of ecommerce page\r https://demo.nopcommerce.com/\r test",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:chrome": "cross-env test_env=test npx playwright test --project=chromium",
+    "test:firefox": "cross-env test_env=test npx playwright test --project=firefox",
+    "test:webkit": "cross-env test_env=test npx playwright test --project=webkit",
+    "prod:chrome": "cross-env test_env=prod npx playwright test --project=chromium",
+    "prod:firefox": "cross-env test_env=prod npx playwright test --project=firefox",
+    "prod:webkit": "cross-env test_env=prod npx playwright test --project=webkit"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EmirSab/pw-nopcommerce.git"
@@ -16,6 +23,10 @@
   },
   "homepage": "https://github.com/EmirSab/pw-nopcommerce#readme",
   "devDependencies": {
-    "@playwright/test": "^1.34.3"
+    "@playwright/test": "^1.34.3",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4"
   }
 }
